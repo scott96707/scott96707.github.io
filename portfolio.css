@@ -1,37 +1,59 @@
+@import url(https://fonts.googleapis.com/css?family=Crimson+Text);
+
 * {
     margin: 0;
     padding: 0;
+    font-family: "Courier New", Courier, monospace;
 }
 
 p {
-    font-family: "Courier New", Courier, monospace;
     font-size: 1em;
 }
+
 header {
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
     background-image: url("images/trianglify.png");
     background-size: cover;
     background-attachment: fixed;
 }
 
-.home-section {
-    padding-top: 40vh;
+#home-section {
+    padding-top: 45vh;
     text-align: center;
     font-size: 1.5em;
     word-wrap: break-word;
 }
 
-@media (max-width: 700px) {
-    .home-section {
-        text-align: center;
-    }
-
-.about-section .portfolio-section {
-    width: 50%;
-    font-size: 100em;
+#about-section {
+    height: 5vw;
+    text-align: center;
+    width: 100%;
+    padding-top: 3vw;
+    font-size: 1em;
 }
 
 footer {
-    min-height: 100vh;
+    width: 100%;
+    position: absolute;
+}
+
+/* Animations */
+.typewriter {
+    margin: 0 auto;
+    white-space: nowrap;
+    border-right: .75em solid white;
+    overflow: hidden;
+    animation: typing 3.5s steps(50, end),
+    blink 1s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
 }

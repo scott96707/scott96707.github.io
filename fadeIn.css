@@ -1,0 +1,95 @@
+@import url(https://fonts.googleapis.com/css?family=Crimson+Text);
+
+/*=== Basic box styling  ===*/
+.col-container {
+    width: 33vw;
+}
+
+.box1 {
+    background: #F7BB5F none repeat scroll 0 0;
+    color: white;
+    font-family: 'Crimson Text', serif;
+    font-size: 14px;
+    font-weight: 600;
+    height: 15vw;
+    line-height: 15vw;
+    margin: 0 auto 3%;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.box2 {
+    background: #9BF75E none repeat scroll 0 0;
+    color: white;
+    font-family: 'Crimson Text', serif;
+    font-size: 14px;
+    font-weight: 600;
+    height: 15vw;
+    line-height: 15vw;
+    margin: 0 auto 3%;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.box3 {
+    background: #5ED9F7 none repeat scroll 0 0;
+    color: white;
+    font-family: 'Crimson Text', serif;
+    font-size: 14px;
+    font-weight: 600;
+    height: 15vw;
+    line-height: 15vw;
+    margin: 0 auto 3%;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/*=== Trigger  ===*/
+.animate {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/*=== Delay for animations ===*/  
+.delay {
+-webkit-animation-delay: 0.75s;
+-moz-animation-delay: 0.75s;
+animation-delay: 0.75s;
+}
+
+/*=== FADE IN LEFT ===*/
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
