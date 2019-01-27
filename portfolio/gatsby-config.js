@@ -7,6 +7,7 @@ module.exports = {
   siteMetadata: {
     siteUrl: config.siteUrl + pathPrefix,
   },
+  pathPrefix: "/portfolio",
   /* Plugins */
   plugins: [
     'gatsby-plugin-react-helmet',
