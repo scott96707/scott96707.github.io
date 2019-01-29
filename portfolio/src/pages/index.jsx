@@ -71,33 +71,36 @@ const Index = () => (
         <Title>Projects</Title>
         <ProjectsWrapper>
           <ProjectCard
-            title="Freiheit"
-            link="https://www.behance.net/gallery/58937147/Freiheit"
+            title="Face Recognition App"
+            link="https://facerecognitionfrontend.herokuapp.com/"
             bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
           >
-            This project is my entry to Adobe's #ChallengeYourPerspective contest.
+            `Register and submit an image URL. Human faces will be
+            framed.
+            React front-end, Node and Express w/ PostgreSQL back-end.`
           </ProjectCard>
           <ProjectCard
-            title="Harry Potter"
-            link="https://www.behance.net/gallery/52915793/Harry-Potter"
+            title="Star Wars Cards"
+            link="https://starwarscards.herokuapp.com/"
             bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
           >
-            I entered the DOCMA 2017 award with this Harry Potter inspired image.
+            List of cards displaying Star Wars planet informtion.
+            React front-end, uses free Star Wars API.
           </ProjectCard>
           <ProjectCard
-            title="Tomb Raider"
-            link="https://www.behance.net/gallery/43907099/Tomb-Raider"
+            title="Stock Grapher"
             bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
           >
-            Recreation of a Tomb Raider Wallpaper (Fan Art)
+            (Work in Progress) Displays stock information.
+            Uses D3 for graphing, React front-end.
           </ProjectCard>
-          <ProjectCard
+          {/* <ProjectCard
             title="Eagle"
             link="https://www.behance.net/gallery/38068151/Eagle"
             bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
-          >
+          }
             A fantasy image manipulation relocating the habitat of wild animals.
-          </ProjectCard>
+          </ProjectCard> */}
         </ProjectsWrapper>
       </Projects>
       <About offset={3}>
@@ -105,11 +108,11 @@ const Index = () => (
         <AboutHero>
           <Avatar src={avatar} alt="Scott Green" />
           <AboutSub>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit aliquid accusamus minus!
+            
           </AboutSub>
         </AboutHero>
         <AboutDesc>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus fugiat deleniti distinctio nihil voluptatum, recusandae impedit cupiditate eligendi, vero rerum quod totam mollitia placeat obcaecati asperiores provident suscipit laboriosam excepturi.
+          Creative full stack developer looking to grow with a dedicated team. Enthusiastic to learn, spending my free time reading up on libraries and techniques. I am obsessed with surmounting engineering hurdles and hunting down pesky bugs. Over 5 years experience working in IT.
         </AboutDesc>
       </About>
       <Contact offset={4}>
@@ -121,9 +124,6 @@ const Index = () => (
           </ContactText>
         </Inner>
         <Footer>
-          &copy; 2019 by Gatsby Starter Portfolio Cara.{' '}
-          <a href="https://github.com/LekoArts/gatsby-starter-portfolio-cara">Github Repository</a>. Made by{' '}
-          <a href="https://www.lekoarts.de">LekoArts</a>.
         </Footer>
       </Contact>
     </Parallax>

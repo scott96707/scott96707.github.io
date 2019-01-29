@@ -3,11 +3,11 @@ const tailwind = require('../tailwind')
 module.exports = {
   pathPrefix: '/', // Prefix for all links. If you deploy your site to example.com/portfolio your pathPrefix should be "/portfolio"
 
-  siteTitle: 'Scott - Gatsby Portfolio', // Navigation and Site Title
+  siteTitle: 'SG - Portfolio', // Navigation and Site Title
   siteTitleAlt: 'Scott', // Alternative Site title for SEO
   siteTitleShort: 'Scott', // short_name for manifest
   siteHeadline: 'Creating interesting websites and apps', // Headline for schema.org JSONLD
-  siteUrl: 'https://cara.lekoarts.de', // Domain of your site. No trailing slash!
+  siteUrl: 'https://scott96707.github.io/', // Domain of your site. No trailing slash!
   siteLanguage: 'en', // Language Tag on <html> element
   siteLogo: '/logo.png', // Used for SEO and manifest
   siteDescription: 'Playful & Colorful One-Page website with Parallax effect',
