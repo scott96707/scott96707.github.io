@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-sitemap: https://scott96707.github.io/sitemap.xml
