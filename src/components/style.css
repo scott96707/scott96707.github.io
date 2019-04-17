@@ -1,0 +1,29 @@
+.wrapper {
+    background-color: #fff;
+    color: #444;
+    text-align: center;
+    width: 100%;
+}
+
+.section {
+    display: grid;
+    grid-template-areas: "left right";
+    grid-template-columns: 4fr 6fr;
+    height: 50vh;
+    width: 100%;
+}
+
+.left {
+    grid-area: left;
+}
+
+.right {
+    grid-area: right;
+    background-color: #844b83;
+    color: white;
+}
+
+.project__picker {
+    cursor: pointer;
+    padding: 10px;
+}

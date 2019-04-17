@@ -14,10 +14,11 @@ import Img from "gatsby-image"
  */
 
 const Image = () => (
+
   <StaticQuery
     query={graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "FaceRecognition.png" }) {
+        placeholderImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
           childImageSharp {
             fluid(maxWidth: 300) {
               ...GatsbyImageSharpFluid

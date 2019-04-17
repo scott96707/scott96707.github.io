@@ -1,32 +1,79 @@
-import { Link } from "gatsby"
+import { a } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <header
     style={{
       background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-      height: `10vw`,
+      height: `4vw`,
+      width: `100%`,
+      margin: `0`,
+      padding: `0`,
     }}
   >
     <div
       style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
+        display: `inline-flex`,
+        alignContent: `center`,
+        justifyContent: `space-around`,
+        width: `1vw`,
       }}
     >
       <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
+        <a
+          href="#home"
           style={{
             color: `white`,
             textDecoration: `none`,
           }}
         >
-          {siteTitle}
-        </Link>
+          Home
+        </a>
+      </h1>
+      <h1 style={{ margin: 0 }}>
+        <a
+          href="#about"
+          style={{
+            color: `white`,
+            textDecoration: `none`,
+          }}
+        >
+          About
+        </a>
+      </h1>
+      <h1 style={{ margin: 0 }}>
+        <a
+          href="#projects"
+          style={{
+            color: `white`,
+            textDecoration: `none`,
+          }}
+        >
+          Projects
+        </a>
+      </h1>
+      <h1 style={{ margin: 0 }}>
+        <a
+          href="#contactme"
+          style={{
+            color: `white`,
+            textDecoration: `none`,
+          }}
+        >
+          Contact Me
+        </a>
+      </h1>
+      <h1 style={{ margin: 0 }}>
+          <a
+            href="http://github.com/scott96707"
+            style={{
+              color: `white`,
+              textDecoration: `none`,
+            }}
+          >
+            Github
+          </a>
       </h1>
     </div>
   </header>

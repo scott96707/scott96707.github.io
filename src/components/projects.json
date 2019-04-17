@@ -1,0 +1,20 @@
+
+{
+    "projects": [
+        {
+            "name": "This portfolio page",
+            "description": "Simple portfolio page built with React and Gatsby. Selectable projects.",
+            "link": "https://scott96707.github.io/"
+        },
+        {
+            "name": "FaceRecognition App",
+            "description": "Uses React and Node.js with the Clarifai face recognition API to identify human faces from input images.",
+            "link": "https://facerecognitionfrontend.herokuapp.com/"
+        },
+        {
+            "name": "StarWars App",
+            "description": "Displays cards of information on the Star Wars universe. Powered by the free Star Wars API.",
+            "link": "https://starwarscards.herokuapp.com/"
+        }
+    ]
+}
