@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "./image.js"
+import Image from "./image";
 import "./style.css"
 
 let projectsList = require('./projects.json');
