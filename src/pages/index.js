@@ -52,7 +52,7 @@ class IndexPage extends React.Component {
         <About />
         <div className="section" id="projects">
           <div className="section__left">
-            <h1><u>Projects</u></h1>
+            <h2><u>Projects</u></h2>
             <p>Projects created in my free time. I'm currently working through them and cleaning them up, fixing bugs and improving usability.</p>
           </div>
           <div className="section__right" style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
@@ -66,8 +66,8 @@ class IndexPage extends React.Component {
                 <Img style={{ maxWidth: `100%` }} fluid={eval(projectsList.projects[this.state.projectNumber].image)} alt={projectsList.projects[projectNumber].name} />
               </a>
               <div>
-                <p>{projectNumber}</p>
-                <h2 id="projectName">{projectsList.projects[projectNumber].name}</h2>
+                <p>{projectNumber}/{projectsList.projects.length}</p>
+                <h3 id="projectName">{projectsList.projects[projectNumber].name}</h3>
                 <p id="projectDesc">{projectsList.projects[projectNumber].description}</p>
               </div>
             </div>
