@@ -65,24 +65,21 @@ body {
     }
 }
 
-.section h2 {
-    text-decoration: underline;
-}
-
 .section__left, .section__right {
     display: grid;
+    place-content: center;
+    align-content: start;
     padding: 0 4em;
     height: fit-content;
 }
 
 .section__left {
     grid-area: left;
-    align-content: center;
 }
 
 .section__right {
     grid-area: right;
-    place-content: center;
+    align-content: center;
     background-color: #844b83;
     color: white;
 }
@@ -96,19 +93,11 @@ body {
     display: grid;
     grid-auto-flow: column;
     grid-template-areas: "languages frameworks" "devtools concepts";
-    grid-gap: 20px 100px;
-}
-
-#software__list h4 {
-    text-transform: uppercase;
+    grid-gap: 15px;
 }
 
 ul {
     list-style: none;
-    margin: -10px 0 0 0;
+    margin: 0;
     padding: 0;
-}
-
-p {
-    margin-top: -10px;
 }

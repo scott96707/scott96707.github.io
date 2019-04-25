@@ -4,12 +4,11 @@ const Software = () => {
     return (
     <div className="section">
         <div className="section__left">
-            <h2>Technologies</h2>
-            <p>Software I'm familiar with.</p>
+            <h1>Technologies</h1>
         </div>
         <div className="section__right" id="software__list">
             <div className="languages">
-                <h4>Languages</h4>
+                <h3>Languages</h3>
                 <ul>
                     <li>Javascript</li>
                     <li>HTML5</li>
@@ -17,21 +16,21 @@ const Software = () => {
                 </ul>
             </div>
             <div className="frameworks">
-                <h4>Framework</h4>
+                <h3>Framework</h3>
                 <ul>
                     <li>React</li>
                 </ul>
             </div>
             <div className="devtools">
-                <h4>Devtools</h4>
+                <h3>Devtools</h3>
                 <ul>
                     <li>Git</li>
+                    <li>NPM</li>
                     <li>Gatsby</li>
-                    <li>npm</li>
                 </ul>
             </div>
             <div className="concepts">
-                <h4>Concepts</h4>
+                <h3>Concepts</h3>
                 <ul>
                     <li>Agile</li>
                 </ul>
