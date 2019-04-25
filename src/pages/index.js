@@ -1,16 +1,15 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Img from 'gatsby-image';
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Header from "../components/header"
 import Intro from "../components/intro"
 import About from "../components/about"
+import Projects from "../components/projects"
 import Software from "../components/software"
 
 import "../components/style.css"
-const projectsList = require('../components/projects.json')
 
 class IndexPage extends React.Component {
   constructor() {
@@ -79,9 +78,8 @@ class IndexPage extends React.Component {
           </div>
         </div>
       <Software />
-      </Layout>
-    )
-  }
+    </Layout>
+  )
 }
 export default IndexPage
 
