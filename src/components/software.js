@@ -8,7 +8,7 @@ const Software = () => {
         </div>
         <div className="section__right" id="software__list">
             <div className="languages">
-                <h3>Languages</h3>
+                <h4>Languages</h4>
                 <ul>
                     <li>Javascript</li>
                     <li>HTML5</li>
@@ -16,13 +16,13 @@ const Software = () => {
                 </ul>
             </div>
             <div className="frameworks">
-                <h3>Framework</h3>
+                <h4>Framework</h4>
                 <ul>
                     <li>React</li>
                 </ul>
             </div>
             <div className="devtools">
-                <h3>Devtools</h3>
+                <h4>Devtools</h4>
                 <ul>
                     <li>Git</li>
                     <li>NPM</li>
@@ -30,7 +30,7 @@ const Software = () => {
                 </ul>
             </div>
             <div className="concepts">
-                <h3>Concepts</h3>
+                <h4>Concepts</h4>
                 <ul>
                     <li>Agile</li>
                 </ul>

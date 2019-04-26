@@ -4,6 +4,17 @@
     width: 100%;
 }
 
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0 0 15px 0;
+    padding: 0;
+}
+
 nav {
     background: rebeccapurple;
     height: 45px;
@@ -11,8 +22,7 @@ nav {
     margin: 0;
     padding: 0;
     display: grid;
-    justify-content: center;
-    align-content: center;
+    place-content:  center;
 }
 @media (max-width: 900px) {
     nav {
@@ -67,19 +77,21 @@ body {
 
 .section__left, .section__right {
     display: grid;
-    place-content: center;
-    align-content: start;
     padding: 0 4em;
     height: fit-content;
 }
 
+.section h1 {
+    text-decoration: underline;
+}
+
 .section__left {
     grid-area: left;
+    align-content: start;
 }
 
 .section__right {
     grid-area: right;
-    align-content: center;
     background-color: #844b83;
     color: white;
 }
@@ -91,13 +103,25 @@ body {
 
 #software__list {
     display: grid;
+    place-content: center;
     grid-auto-flow: column;
     grid-template-areas: "languages frameworks" "devtools concepts";
-    grid-gap: 15px;
+    grid-gap: 50px 50px;
+    font-size: 1.5em;
 }
 
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+#software__list ul {
+    margin-top: -20px;
+}
+
+#software__list h4 {
+    text-transform: bold;
+    text-transform: uppercase;
+}
+
+@media (max-width:920px) {
+    #software__list {
+        display: grid;
+        grid-template-areas: "languages" "frameworks" "devtools" "concepts"
+    }
 }
