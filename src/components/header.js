@@ -7,22 +7,22 @@ const Header = () => (
   <nav>
     <ul className="navbar__list" >
       <li style={{ margin: 0 }}>
-        <a href="#home" style={{ color: `white`, textDecoration: `none` }} >
+        <a href="#home">
           Home
         </a>
       </li>
       <li style={{ margin: 0 }}>
-        <a href="#about" style={{ color: `white`, textDecoration: `none` }} >
+        <a href="#about" >
           About
         </a>
       </li>
       <li style={{ margin: 0 }}>
-        <a href="#projects" style={{ color: `white`, textDecoration: `none` }} >
+        <a href="#projects">
           Projects
         </a>
       </li>
       <li style={{ margin: 0 }}>
-        <a href="#contactme" style={{ color: `white`, textDecoration: `none` }} >
+        <a href="#contact">
           Contact Me
         </a>
       </li>

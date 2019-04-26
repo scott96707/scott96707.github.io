@@ -1,7 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Img from "gatsby-image";
-import Image from "../components/image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -9,6 +8,7 @@ import Header from "../components/header"
 import Intro from "../components/intro"
 import About from "../components/about"
 import Software from "../components/software"
+import Contact from "../components/contact"
 
 import "../components/style.css"
 const projectsList = require("../components/projects.json")
@@ -51,42 +51,46 @@ class IndexPage extends React.Component {
         <Header />
         <Intro />
         <About />
+
         <div className="section" id="projects">
           <div className="section__left">
             <h1><u>Projects</u></h1>
             <p>Projects created in my free time. I'm currently working through them and cleaning them up, fixing bugs and improving usability.</p>
           </div>
-          <div className="section__right" >
+
+          <div className="section__right" id="project__section" >
             
-              <div style={{height: `400px`, border: "solid", borderColor: "red" }}>
+              <div id="project__image" >
                 <a id="projectLink" href={projectsList.projects[projectNumber].link}>
-                  <Img style={{ maxHeight: `400px` }} fluid={eval(projectsList.projects[this.state.projectNumber].image)} alt={projectsList.projects[projectNumber].name} />
+                  <Img style={{ width: `100px`}} fluid={eval(projectsList.projects[this.state.projectNumber].image)} alt={projectsList.projects[projectNumber].name} />
                 </a>
               </div>
 
-              <div>
-                <div style={{ display: `flex`, placeContent: `center` }}>
-                  <div className="project__picker" id="leftPicker" onClick={() => this.decrementProject()}>
+                <div id="project__selector">
+                  <div className="project__pickers" onClick={() => this.decrementProject()}>
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" title="go back">
                       <polyline points="15 18 9 12 15 6"></polyline>
                     </svg>
                   </div>
-                  <p style={{ textAlign: "left" }}>{projectNumber + 1} / {projectsList.projects.length}</p>
-                  <div className="project__picker" id="rightPicker" onClick={() => this.incrementProject()}>
+                  <div style={{ display: `grid`, placeContent: `center`, fontSize: `14pt` }}>
+                    <p style={{ margin: `0` }}>{projectNumber + 1} / {projectsList.projects.length}</p>
+                  </div>
+                  <div className="project__pickers" onClick={() => this.incrementProject()}>
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" title="go forward">
                       <polyline points="9 18 15 12 9 6"></polyline>
                     </svg>
                   </div>
                 </div>
-                <div style={{ border: "solid", borderColor: "green" }}>
+
+                <div id="project__description" >
                   <h2 id="projectName">{projectsList.projects[projectNumber].name}</h2>
                   <p id="projectDesc">{projectsList.projects[projectNumber].description}</p>
                 </div>
-              </div>
-            
           </div>
         </div>
+
       <Software />
+      <Contact />
     </Layout>
   )
 }
