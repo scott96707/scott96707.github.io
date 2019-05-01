@@ -113,7 +113,6 @@ body {
     width: 100%;
     padding: 0;
     margin: 0;
-    border: solid black;
 }
 
 #project__image, #project__selector,  #project__description {
@@ -123,22 +122,18 @@ body {
 
 #project__image {
     grid-area: image;
-    border: dashed blue;
     align-content: center;
 }
 
 #project__selector {
     grid-area: selector;
     grid-template-columns: 50px 50px 50px;
-    border: groove yellowgreen;
 }
 
 #project__description {
     grid-area: description;
     align-content: start;
     width: 100%;
-    border: dotted;
-    border-color: green;
 }
 
 .project__pickers {
