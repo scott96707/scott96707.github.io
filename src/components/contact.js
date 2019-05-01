@@ -1,22 +1,36 @@
 import React from "react";
+import LinkedInImage from "./linkedinimage"
 
 class Contact extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            name: 'John',
-            email: 'wick@gmail.com',
-            message: 'hello',
+            name: '',
+            email: '',
+            message: '',
         };
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     handleSubmit = (event) => {
-        alert(this.state.name + ' ' + this.state.email + ' ' + this.state.message);
+        
     }
 
     render() {
         return (
+            <div className="section" id="contact">
+                <div className="section__left">
+                    <h1>Contact Me</h1>
+                </div>
+                <div className="section__right" id="contact__right">
+                    <a href="https://linkedin.com/in/scott96707">
+                        <LinkedInImage />
+                    </a>
+                </div>
+            </div>
+            
+            /* Not using this form until I host my page on a website outside of github 
+
             <div className="section" id="contact">
                 <div className="section__left">
                     <h2>Contact Me</h2>
@@ -27,20 +41,20 @@ class Contact extends React.Component {
                             <label>
                                 name
                             </label>
-                                <input />
+                                <input type="text" id="input__name" tabIndex="1" />
                             <label>
                                 email
                             </label>
-                                <input />
+                                <input type="email" id="input__email" tabIndex="2" />
                             <label>
                                 message
                             </label>
-                                <input />
-                            <input value="submit" type="submit" />
+                                <input type="text" id="input__message" tabIndex="3" />
+                            <input value="Submit" type="submit" tabIndex="4" />
                         </form>
                     </div>
                 </div>
-            </div>
+            </div> */
         )
     }
 }

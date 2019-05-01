@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Image from "./image"
+import GitImage from "./gitimage"
 import "./style.css"
 
 const Header = () => (
@@ -28,7 +28,7 @@ const Header = () => (
       </li>
       <li style={{ margin: 0 }}>
           <a href="http://github.com/scott96707" style={{ textDecoration: `none` }} >
-            <Image />
+            <GitImage />
           </a>
       </li>
     </ul>

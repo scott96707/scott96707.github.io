@@ -27,6 +27,7 @@ nav {
     display: grid;
     place-content:  center;
     position: fixed;
+    z-index: 1;
 }
 @media (max-width: 900px) {
     nav {
@@ -62,6 +63,9 @@ body {
     .section__left, .section__right {
         padding: 0 2em;
         height: 50vh;
+    }
+    #software__list {
+        padding-bottom: 10px;
     }
 }
 
@@ -159,6 +163,10 @@ body {
 #software__list h4 {
     text-transform: bold;
     text-transform: uppercase;
+}
+
+#contact__right {
+    place-content: center;
 }
 
 @media (max-width:920px) {
