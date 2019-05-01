@@ -15,7 +15,7 @@
         },
         {
             "name": "StarWars App",
-            "description": "Displays cards of information on the Star Wars universe. Powered by the free Star Wars API.",
+            "description": "Displays cards of information on the Star Wars universe. Pulls data from the free Star Wars API.",
             "link": "https://starwarscards.herokuapp.com/",
             "image": "this.props.data.starWars.childImageSharp.fluid"
         }

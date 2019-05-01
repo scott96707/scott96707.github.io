@@ -53,18 +53,20 @@ class IndexPage extends React.Component {
         <About />
 
         <div className="section" id="projects">
-          <div className="section__left">
+          <div className="section__left" id="project__left">
             <h1><u>Projects</u></h1>
-            <p>Projects created in my free time. I'm currently working through them and cleaning them up, fixing bugs and improving usability.</p>
+            <p>Work from my free time. I'm currently cleaning them up, fixing bugs and improving usability.</p>
           </div>
 
           <div className="section__right" id="project__section" >
             
-              <div id="project__image" >
-                <a id="projectLink" href={projectsList.projects[projectNumber].link}>
-                  <Img style={{ width: `100px`}} fluid={eval(projectsList.projects[this.state.projectNumber].image)} alt={projectsList.projects[projectNumber].name} />
-                </a>
-              </div>
+              <a id="projectLink" href={projectsList.projects[projectNumber].link}>
+                <div id="project__image" >
+                  <div id="test">
+                    <Img fluid={eval(projectsList.projects[this.state.projectNumber].image)} alt={projectsList.projects[projectNumber].name} />
+                    </div>
+                </div>
+              </a>
 
                 <div id="project__selector">
                   <div className="project__pickers" onClick={() => this.decrementProject()}>
@@ -113,9 +115,9 @@ query {
       }
     }
   }
-  starWars: file(relativePath: { eq: "gatsby-astronaut.png" }) {
+  starWars: file(relativePath: { eq: "starTours.png" }) {
     childImageSharp {
-      fluid(maxWidth: 1000) {
+      fluid(maxHeight: 1000) {
         ...GatsbyImageSharpFluid
       }
     }

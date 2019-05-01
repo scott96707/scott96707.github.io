@@ -5,6 +5,7 @@ const Software = () => {
     <div className="section">
         <div className="section__left">
             <h1>Technologies</h1>
+            <p>A list of some of the software I'm used to working with. Currently playing around with Gatsby and GraphQL.</p>
         </div>
         <div className="section__right" id="software__list">
             <div className="languages">

@@ -21,6 +21,7 @@ class Contact extends React.Component {
             <div className="section" id="contact">
                 <div className="section__left">
                     <h1>Contact Me</h1>
+                    <p>If you'd like to get in touch, please message me through LinkedIn.</p>
                 </div>
                 <div className="section__right" id="contact__right">
                     <a href="https://linkedin.com/in/scott96707">
