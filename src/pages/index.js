@@ -50,49 +50,50 @@ class IndexPage extends React.Component {
         <SEO title="Home" keywords={[`gatsby`, `web developer`, `react`, `Scott Green`]} />
         <Header />
         <Intro />
-        <About />
+        <div id="main">
+          <About />
+          <div className="section" id="projects">
+            <div className="section__left" id="project__left">
+              <h1><u>Projects</u></h1>
+              <p>Work from my free time. I'm currently cleaning them up, fixing bugs and improving usability.</p>
+            </div>
 
-        <div className="section" id="projects">
-          <div className="section__left" id="project__left">
-            <h1><u>Projects</u></h1>
-            <p>Work from my free time. I'm currently cleaning them up, fixing bugs and improving usability.</p>
-          </div>
+            <div className="section__right" id="project__section" >
+              
+                <a id="projectLink" href={projectsList.projects[projectNumber].link}>
+                  <div id="project__image" >
+                    <div>
+                      <Img fluid={eval(projectsList.projects[this.state.projectNumber].image)} alt={projectsList.projects[projectNumber].name} />
+                      </div>
+                  </div>
+                </a>
 
-          <div className="section__right" id="project__section" >
-            
-              <a id="projectLink" href={projectsList.projects[projectNumber].link}>
-                <div id="project__image" >
-                  <div>
-                    <Img fluid={eval(projectsList.projects[this.state.projectNumber].image)} alt={projectsList.projects[projectNumber].name} />
+                  <div id="project__selector">
+                    <div className="project__pickers" onClick={() => this.decrementProject()}>
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" title="go back">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                      </svg>
                     </div>
-                </div>
-              </a>
+                    <div style={{ display: `grid`, placeContent: `center`, fontSize: `14pt` }}>
+                      <p style={{ margin: `0` }}>{projectNumber + 1} / {projectsList.projects.length}</p>
+                    </div>
+                    <div className="project__pickers" onClick={() => this.incrementProject()}>
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" title="go forward">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                      </svg>
+                    </div>
+                  </div>
 
-                <div id="project__selector">
-                  <div className="project__pickers" onClick={() => this.decrementProject()}>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" title="go back">
-                      <polyline points="15 18 9 12 15 6"></polyline>
-                    </svg>
+                  <div id="project__description" >
+                    <h2 id="projectName">{projectsList.projects[projectNumber].name}</h2>
+                    <p id="projectDesc">{projectsList.projects[projectNumber].description}</p>
                   </div>
-                  <div style={{ display: `grid`, placeContent: `center`, fontSize: `14pt` }}>
-                    <p style={{ margin: `0` }}>{projectNumber + 1} / {projectsList.projects.length}</p>
-                  </div>
-                  <div className="project__pickers" onClick={() => this.incrementProject()}>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" title="go forward">
-                      <polyline points="9 18 15 12 9 6"></polyline>
-                    </svg>
-                  </div>
-                </div>
-
-                <div id="project__description" >
-                  <h2 id="projectName">{projectsList.projects[projectNumber].name}</h2>
-                  <p id="projectDesc">{projectsList.projects[projectNumber].description}</p>
-                </div>
+            </div>
           </div>
-        </div>
 
-      <Software />
-      <Contact />
+        <Software />
+        <Contact />
+      </div>
     </Layout>
   )
 }

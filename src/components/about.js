@@ -10,7 +10,9 @@ const About = () => {
                 <p>I love to learn new skills and technologies.</p>
             </div>
             <div className="section__right">
+                <div>
                     <ProfileImage />
+                </div>
             </div>
         </div>
     )

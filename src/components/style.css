@@ -44,6 +44,29 @@ body {
     margin: 0;
 }
 
+#main {
+    display: grid;
+    grid-template-areas: "about" "projects" "software" "contact";
+    
+}
+
+#about{
+    grid-area: about;
+    overflow: hidden;
+}
+
+#projects {
+    grid-area: projects;
+}
+
+#software {
+    grid-area: software;
+}
+
+#contact {
+    grid-area: contact;
+}
+
 .section {
     display: grid;
     grid-template-areas: "left right";
@@ -93,6 +116,7 @@ body {
 
 #about .section__right {
     border-radius: 20px 0px 0px 0px;
+    height: fit-content;
 }
 
 #project__section {

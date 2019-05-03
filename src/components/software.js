@@ -2,7 +2,7 @@ import React from "react";
 
 const Software = () => {
     return (
-    <div className="section">
+    <div className="section" id="software">
         <div className="section__left">
             <h1>Technologies</h1>
             <p>A list of some of the software I'm used to working with. Currently playing around with Gatsby and GraphQL.</p>
