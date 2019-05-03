@@ -2,11 +2,11 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-const LinkedInImage = () => (
+const ProfileImage = () => (
     <StaticQuery
         query={graphql`
             query {
-                linkedIn: file(relativePath: { eq: "LinkedIn.png" }) {
+                profileImage: file(relativePath: { eq: "superProfessional.jpeg" }) {
                     childImageSharp {
                         fluid(maxWidth: 1000) {
                             ...GatsbyImageSharpFluid
@@ -16,9 +16,9 @@ const LinkedInImage = () => (
             }
         `}
         render={data => 
-            <Img fluid={data.linkedIn.childImageSharp.fluid} style={{ width: `96px`, height: `96px` }} alt="LinkedIn link" />
+            <Img fluid={data.profileImage.childImageSharp.fluid} style={{ width: `100%` }}  alt="Profile Pic" />
         }
     />
 )
 
-export default LinkedInImage
+export default ProfileImage;

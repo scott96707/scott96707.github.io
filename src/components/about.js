@@ -1,4 +1,5 @@
 import React from "react";
+import ProfileImage from './profileimage'
 
 const About = () => {
     return (
@@ -9,7 +10,7 @@ const About = () => {
                 <p>I love to learn new skills and technologies.</p>
             </div>
             <div className="section__right">
-                <h1>Photo here</h1>
+                    <ProfileImage />
             </div>
         </div>
     )

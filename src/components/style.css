@@ -73,7 +73,6 @@ body {
 
 .section__right {
     grid-area: right;
-    justify-content: center;
     background-color: #844b83;
     color: white;
 }
@@ -90,6 +89,10 @@ body {
 }
 #intro h2 {
     font-size: 33px;
+}
+
+#about .section__right {
+    border-radius: 20px 0px 0px 0px;
 }
 
 #project__section {

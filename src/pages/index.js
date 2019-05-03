@@ -62,7 +62,7 @@ class IndexPage extends React.Component {
             
               <a id="projectLink" href={projectsList.projects[projectNumber].link}>
                 <div id="project__image" >
-                  <div id="test">
+                  <div>
                     <Img fluid={eval(projectsList.projects[this.state.projectNumber].image)} alt={projectsList.projects[projectNumber].name} />
                     </div>
                 </div>
