@@ -202,6 +202,11 @@ body {
         padding: 0 2em;
         height: 50vh;
     }
+    .section__right {
+        height: fit-content;
+        border-radius: 10px !important;
+    }    
+
     #project__section {
         overflow: hidden;
         grid-gap: 30px;
