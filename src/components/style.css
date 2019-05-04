@@ -200,7 +200,7 @@ body {
     }
     .section__left, .section__right {
         padding: 0 2em;
-        height: 50vh;
+        height: fit-content;
     }
     .section__right {
         height: fit-content;
