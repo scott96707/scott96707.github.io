@@ -29,33 +29,6 @@ class Contact extends React.Component {
                     </a>
                 </div>
             </div>
-            
-            /* Not using this form until I host my page on a website outside of github 
-
-            <div className="section" id="contact">
-                <div className="section__left">
-                    <h2>Contact Me</h2>
-                </div>
-                <div className="section__right">
-                    <div >
-                        <form style={{ display: `flex`, flexDirection: `column` }} onSubmit={this.handleSubmit}>
-                            <label>
-                                name
-                            </label>
-                                <input type="text" id="input__name" tabIndex="1" />
-                            <label>
-                                email
-                            </label>
-                                <input type="email" id="input__email" tabIndex="2" />
-                            <label>
-                                message
-                            </label>
-                                <input type="text" id="input__message" tabIndex="3" />
-                            <input value="Submit" type="submit" tabIndex="4" />
-                        </form>
-                    </div>
-                </div>
-            </div> */
         )
     }
 }

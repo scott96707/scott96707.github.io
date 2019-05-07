@@ -1,7 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
 import GitImage from "./gitimage"
-import "./style.css"
 
 const Header = () => (
   <nav>
