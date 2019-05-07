@@ -1,9 +1,10 @@
-import React from 'react';
-import ProjectCard from "./projectcard";
+import React from 'react'
+import ProjectCard from '../components/projectcard'
+import Content from '../elements/content'
 
 const Projects = () => {
     return (
-        <div className="section" id="projects">
+        <Content>
 
             <ProjectCard
             title="FaceRecognition App"
@@ -21,7 +22,7 @@ const Projects = () => {
             Displays cards of information on the Star Wars universe. Pulls data from the free Star Wars API.
             </ProjectCard>
             
-        </div>
+        </Content>
     )
 }
 
