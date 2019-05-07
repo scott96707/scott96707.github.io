@@ -1,9 +1,4 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://scott96707.github.io/">
-    <img alt="Logo" src="./images/scottLogo.png" width="60" />
-  </a>
-</p>
 <h1 align="center">
   My Portfolio
 </h1>
