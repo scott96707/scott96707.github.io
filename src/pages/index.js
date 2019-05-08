@@ -93,7 +93,7 @@ const IndexPage= () => {
                   <ProjectCard
                       title="FaceRecognition App"
                       link="https://facerecognitionfrontend.herokuapp.com/"
-                      bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
+                      bg="linear-gradient(to right, #f6d365 0%, #fda085 100%)"
                       >
                       Uses React and Node.js with the Clarifai face recognition API to identify human faces from input images.
                       </ProjectCard>
@@ -101,7 +101,7 @@ const IndexPage= () => {
                       <ProjectCard
                       title="StarWars App"
                       link="https://starwarscards.herokuapp.com/"
-                      bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
+                      bg="linear-gradient(to right, #fda085 0%, #f6d365 100%)"
                       >
                       Imports data from the free Star Wars API, displaying planets on separate cards which can be flipped to display more data with a click. Uses React.
                     </ProjectCard>
