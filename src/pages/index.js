@@ -64,7 +64,7 @@ const IndexPage= () => {
     return (
       <>
         <Layout />
-        <Parallax pages={4}>
+        <Parallax pages={5}>
           <Hero offset={0}>
             <BigTitle>
               Scott Green
@@ -108,7 +108,7 @@ const IndexPage= () => {
 
               </ProjectsWrapper>
           </Projects>  
-          <Contact offset={3}>
+          <Contact offset={4}>
           <Inner>
             <Title>Get in touch</Title>
             <ContactText>
