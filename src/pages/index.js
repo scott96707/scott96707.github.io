@@ -18,6 +18,7 @@ import Projects from "../sections/projects.jsx"
 import Contact from "../sections/contact.jsx"
 
 import avatar from '../images/superProfessional.jpeg'
+import linkedin from '../images/LinkedIn.png'
 
 const ProjectsWrapper = styled.div`
   ${tw`flex flex-wrap justify-between mt-8`};
@@ -52,16 +53,18 @@ const AboutDesc = styled.p`
 const ContactText = styled.p`
   ${tw`text-grey-light font-sans text-xl md:text-2xl lg:text-3xl`};
 `
-
 const Footer = styled.footer`
   ${tw`text-center text-grey absolute pin-b p-6 font-sans text-md lg:text-lg`};
+`
+const LinkedInImage = styled.img`
+  ${tw` w-32 xl:w-48 shadow-lg h-auto`};
 `
 
 const IndexPage= () => {
     return (
       <>
         <Layout />
-        <Parallax pages={5}>
+        <Parallax pages={4}>
           <Hero offset={0}>
             <BigTitle>
               Scott Green
@@ -84,7 +87,7 @@ const IndexPage= () => {
               site: https://cara.lekoarts.de/
             </AboutDesc>
           </About>
-            <Projects offset={3}>
+            <Projects offset={2}>
                 <Title>Projects</Title>
               <ProjectsWrapper>
                   <ProjectCard
@@ -100,18 +103,20 @@ const IndexPage= () => {
                       link="https://starwarscards.herokuapp.com/"
                       bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
                       >
+                      Imports data from the free Star Wars API, displaying planets on separate cards which can be flipped to display more data with a click. Uses React.
                     </ProjectCard>
 
               </ProjectsWrapper>
           </Projects>  
-          <Contact offset={4}>
+          <Contact offset={3}>
           <Inner>
             <Title>Get in touch</Title>
             <ContactText>
-              Say <a href="mailto:plizNoSp4m@domain.tld">Hi</a> or find me on other platforms:{' '}
-              <a href="https://dribbble.com/LekoArts">Dribbble</a> &{' '}
-              <a href="https://www.instagram.com/lekoarts.de/">Instagram</a>
+              Feel free to reach out to me through Linked In:
             </ContactText>
+              <a href="https://linkedin.com/in/scott96707">
+              <LinkedInImage src={linkedin} alt="Scott Green" />
+              </a>
           </Inner>
           <Footer>
             <a href="https://github.com/scott96707">Github Repository</a>
