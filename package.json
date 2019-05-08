@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "scott-green-portfolio-page",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Personal Portfolio Page",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Scott Green <scott96707@gmail.com>",
   "dependencies": {
     "gatsby": "^2.4.2",
     "gatsby-image": "^2.0.37",
@@ -18,6 +18,7 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.0",
+    "react-spring": "^8.0.20",
     "styled-components": "^4.2.0"
   },
   "devDependencies": {
@@ -27,12 +28,13 @@
     "tailwindcss": "^0.7.4"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "portfolio"
   ],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "gatsby develop -o",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public -b master",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
