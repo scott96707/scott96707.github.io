@@ -82,8 +82,8 @@ const IndexPage= () => {
               </AboutSub>
             </AboutHero>
             <AboutDesc>
-              I'm currently sharpening my web design skills by reworking this portfolio page.
-              Redesigning it with Gatsby and React, learning a lot from the LekoArts template
+              I'm currently sharpening my front end skills by reworking this portfolio page.
+              <br /><br />Redesigning this page with Gatsby and React, learning a lot from the LekoArts template
               site: https://cara.lekoarts.de/
             </AboutDesc>
           </About>
